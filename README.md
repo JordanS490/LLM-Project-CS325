@@ -3,21 +3,28 @@
 ## Installing Transformers
 
 If you haven't already, you have to install transformers into your conda enviornment. Create a new enviornment with the parameters given in the requirments.yaml that I have provided. Should you need to, you can use this call to install the transformer library by prompting the terminal:
-    ```python
+
+    ```
             conda install -c conda-forge transformers huggingface_hub
     ```
+
 This should ensure you have the libraries needed for the program.
 
 ## Installing PyTorch
 
 You will also have to install pytorch so the program can run off your CPU and/or GPU. The installation process for this is similar to how you installed tranformers. You are going to put another prompt into your terminal that looks like:
-    ```python
+
+
+    ```
             conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
-    ```python
+    ```
+
 This call downloads pytorch to run off of your GPU with CUDA. If you want to run it off your CPU you will have to change the call to look like:
-    ```python
+    
+    ```
             conda install pytorch torchvision torchaudio cpuonly -c pytorch
-    ```python
+    ```
+
 Either will work for this program, but using your GPU may lead to faster compiling.
 
 ## Possible Login to use the LLMs
@@ -27,12 +34,17 @@ You may have to get access to the LLMs through the Hugging Face website. If you 
 Once on the [Hugging Face](https://huggingface.co/) website, register or sign in. Click settings in top right corner, then access tokens on the left side panel, and then you will be prompted to input your password. Once you have authenitcated, you arrive on a page that says "Create new Token" on the right side. Click that. When prompted, input a name that indicates what the token is being used for(example: P1Test1). Select all Repositories and Repository Permissions, then click create token.
 
 You now should have a token you can copy. In both code1.py and code2.py you will find a commented segment for logging in at the very top:
-    ```python
+    
+    ```
          from huggingface_hub import login
+
          # Authenticate using the Hugging Face token
+
          access_token = "your_hugging_face_access_token"
+         
          login(token=access_token)
     ```
+
 Replace *your_hugging_face_access_token* with your copied token. Make sure to keep the quotations, an uncomment that whole segment. Then you should be able to use TinyLlama and LaMini.
 
 ***You only have to login once, so you can comment it out after the first successful run.***
