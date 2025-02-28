@@ -1,6 +1,6 @@
 # Installing Software for code1.py and code2.py
 
-# Installing Transformers
+## Installing Transformers
 
 If you haven't already, you have to install transformers into your conda enviornment. Create a new enviornment with the parameters given in the requirments.yaml that I have provided. Should you need to, you can use this call to install the transformer library by prompting the terminal:
     ```python
@@ -8,7 +8,7 @@ If you haven't already, you have to install transformers into your conda enviorn
     ```
 This should ensure you have the libraries needed for the program.
 
-# Installing PyTorch
+## Installing PyTorch
 
 You will also have to install pytorch so the program can run off your CPU and/or GPU. The installation process for this is similar to how you installed tranformers. You are going to put another prompt into your terminal that looks like:
     ```python
@@ -37,12 +37,12 @@ Replace *your_hugging_face_access_token* with your copied token. Make sure to ke
 
 ***You only have to login once, so you can comment it out after the first successful run.***
 
-# First Compile
+## First Compile
 
 Your first compilation is going to take a while since it has to download all of the files for the LLms as well as the transformer and pytorch library if you have never used them before. Depending on your device, it could take several minutes, so try to have as little other applications running as you can, and be patient. 
 
 After the first compilation, it should output much faster!
 
-# After the First Compile
+## After the First Compile
 
 Depending on your device, compilationcan be really slow since it is running off you CPU and GPU. Do not fret if it hase been five minutes. Just make sure you have as few applications closed, and it will output to end.txt in due time.
