@@ -2,7 +2,7 @@
 
 ## What it does:
 
-This program reads the two URLs located in the *newsSites.txt file.* It will only work with these sites. *** The software scrapes a website's source code and determines what items to return based on the specifications for what classes and types of elements to look for. Different sites will have different class names and header types, so they will not work with this program.
+This program reads the two URLs located in the *newsSites.txt file.* It will only work with these sites. The software scrapes a website's source code and determines what items to return based on the specifications for what classes and types of elements to look for. Different sites will have different class names and header types, so they will not work with this program.
 
 With the specifications it is given, the program will retrieve the titles of the news articles on these two sites. These titles are cleaned up and written into the *articleOutput.txt* file. 
 
