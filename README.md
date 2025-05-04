@@ -7,11 +7,13 @@ The whole program compiles with *main.py* but it refers to *scraper.py* for the 
 
 ## Requirements
 Please clone the environment provided in the *requirments.yml* file. If that is an issue, the packages needed are:
-    1. beautifulsoup4 - FOR SCRAPING
-    2. html5lib - FOR SCRAPING
-    3. transformers - FOR FINDING SENTIMENT
-    4. pytorch - FOR FINDING SENTIMENT
-Instructions on how to intall the packages using bash are found in the relating two sections(Scraping and Sentiment Finding)
+    <ol>
+        <li>beautifulsoup4 - FOR SCRAPING</li>
+        <li>html5lib - FOR SCRAPING</li>
+        <li>transformers - FOR FINDING SENTIMENT</li>
+        <li>pytorch - FOR FINDING SENTIMENT</li>
+   </ol>
+Instructions on how to install the packages using bash are found in the relating two sections(Scraping and Sentiment Finding)
 
 # Scraping Section Information
 ## What it does:
